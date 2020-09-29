@@ -3,7 +3,7 @@
 </div>
 <footer>
 	<div class="footer">
-		© 2020 - 123ink.ie
+		© Rourke Bradley
 	</div>
 </footer>
 
