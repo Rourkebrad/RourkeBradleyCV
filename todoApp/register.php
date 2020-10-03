@@ -18,7 +18,7 @@ if(isset($_POST['signupBtn']))
     $result = "<p style='padding:20px; color: green;'>Successful</p>";
     ?>
         <script>
-        window.location = "http://rourkebradleyprojects.com/index.php";
+        window.location = "/todoApp/index.php";
         </script>
         <?php
   }

@@ -302,7 +302,7 @@ function update_comment($comment,$checkboxAns, $task_id)
   {
     include 'connection.php';
 
-      $sql = "INSERT INTO users(department, userlogin, password, join_date) VALUES (?,?,?,now())";
+      $sql = "INSERT INTO users(department, userlogin, password, join_date) VALUES (?,?,?,date())";
 
 
     try {
@@ -342,7 +342,7 @@ function update_comment($comment,$checkboxAns, $task_id)
         $_SESSION["userlogin"] = $userlogin;
         ?>
         <script>
-        window.location = "http://rourkebradleyprojects.com/index.php";
+        window.location = "/todoApp/index.php";
         </script>
         <?php
       } else {
