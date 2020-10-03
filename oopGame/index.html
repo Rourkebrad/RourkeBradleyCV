@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Phrase Hunter</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/styles.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<!-- Animation styling for button for starting game     -->
+		<style>
+		div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 500px;}
+}</style>
+	</head>
+
+	<body>
+    <header>
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+          <a class="navbar-brand" href="../index.html">Back to Project Menu</a>                 
+        </nav>
+    </header>
+		<div class="main-container">
+			<h2 class="header">Phrase Hunter</h2>
+            <form action="play.php" method="post">
+                <input id="btn__reset" type="submit" value="Start Game" />
+            </form>
+		</div>
+
+	</body>
+</html>

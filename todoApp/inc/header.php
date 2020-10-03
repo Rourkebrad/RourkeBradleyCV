@@ -15,8 +15,8 @@
 
 	<header>
 			<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-			  <a class="navbar-brand" href="./">
-				<img src="inc/img/banner.jpg" height = "91" width="160" class="img-fluid" alt="Responsive image"></a>
+			  <a class="navbar-brand" href="../index.html">Back to Project Menu</a>
+				<!--<img src="inc/img/banner.jpg" height = "91" width="160" class="img-fluid" alt="Responsive image"></a> -->
 			 <ul class="nav nav-pills">
 				 <?php if(isset($_SESSION['userlogin']) && $_SESSION['userlogin'] !== 'admin'): ?>
 					 <li class="nav-item">
