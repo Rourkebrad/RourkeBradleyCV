@@ -48,33 +48,7 @@ if($_SESSION['userlogin'] == "admin"){?>
 			echo "</td></tr>";
 		}
 		}
-    //profile page for customer service manager
-		if($_SESSION['userlogin'] == "Leanne"){?>
-		<div class="container">
-			<table class="table table-striped">
-				<thead>
-					<tr>
-						<h2 class="display-4 text-center">Users - Customer Service</h2>
-					</tr>
-				</thead>
-				<tbody>
-				<?php
-				foreach(listUsers() as $user)
-				{
-					if($user['department'] == 'customer service')
-					{
-					echo "<tr><td>";
-					echo "<a href='reports.php?user=" . $user['id'] . "'>". $user['userlogin'] . "</a>" ;
-					echo "</td><td>";
-					echo $user['department'] . "</td><td>";
-					echo "<a href='task_list.php?user=" . $user['id'] . "'>View tasks</a>";
-					echo "</td><td>";
-					echo "<a href='profile.php?user=8'>Change user to Leanne</a>";
-					echo "</td></tr>";
-				}
-				}
-				}
-
+  
  ?>
 		</tbody>
 	</table>

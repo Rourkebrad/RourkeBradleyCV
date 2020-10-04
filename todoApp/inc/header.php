@@ -26,7 +26,7 @@
  			      <a class="nav-link" href="task_list.php">Tasks</a>
  					</li>
 					<?php endif ?>
-					<?php if(isset($_SESSION['userlogin']) && ($_SESSION['userlogin'] == 'admin' || $_SESSION['userlogin'] == 'Leanne')):  ?>
+					<?php if(isset($_SESSION['userlogin']) && $_SESSION['userlogin'] == 'admin'):  ?>
 					<li class="nav-item">
 						<a class="nav-link" href="profile.php">Profile</a>
 					</li>

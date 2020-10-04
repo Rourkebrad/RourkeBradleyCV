@@ -28,7 +28,7 @@ include 'inc/header.php';
 <?php if(!isset($_SESSION['userlogin'])):  ?>
   <p>You are currently not signed in</p>
 <?php else: ?>
-  <?php if($_SESSION['userlogin'] == 'admin' || $_SESSION['userlogin'] == 'Leanne'){ ?>
+  <?php if($_SESSION['userlogin'] == 'admin'){ ?>
   <p>You are logged in as: <br> userlogin: <?php if(isset($userlogin)) {echo $userlogin;}   ?></p>
   <?php }   ?>
   &nbsp;
