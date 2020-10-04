@@ -1,0 +1,5 @@
+Listing Premium
+ [x] Get status check
+ [x] Get description check
+ [x] Tags allowed
+

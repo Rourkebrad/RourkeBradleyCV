@@ -1,0 +1,1320 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>BassGuitar Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="jquery-migrate-3.0.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <!--********************************/QUIZ PAGE/ HOME*************************************************************** -->
+
+
+    <div data-role="page" id="guide">
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+            <a href="#newpanel" data-role="button" data-inline="true" data-icon="bars" data-ajax="false">Menu</a>
+        </div>
+
+
+        <!-- **************************************************** /panel ******************************************** -->
+
+        <div data-role="panel" id="newpanel" data-position-fixed="true" data-position="left" data-display="overlay" data-theme="b">
+            <h1>Menu</h1>
+
+            <ul data-role="listview">
+                <li><a href="#BeginnerBOG" data-icon="bars" onclick="BOGreloadPage();">Bass or Guitar Quiz</a></li>
+                <li><a href="#quizStart" data-icon="bars" onclick="BGreloadPage();">Type of Bass to Buy Quiz</a></li>
+                <li><a href="#musicQuiz" data-icon="bars" onclick="reloadPage();">Music Knowledge Quiz</a></li>
+
+            </ul>
+        </div>
+
+        <div role="main" class="ui-content">
+
+            <div class="mainpic">
+                <img src="img/BassWall.jpg" alt="Bass Guitar" class="responsive" style="width: 100%;">
+                <div class="container">
+                    <h1 class="qhead">Welcome to BassGuitar Quiz.</h1>
+                    <p class="questionquiz">
+                        Please select Menu to choose a quiz to take.<br />
+                        We have three types of Quizzes:<br />
+                        - Bass or Guitar Quiz.<br />
+                        - Type of Bass to Buy Quiz.<br />
+                        - Music Knowledge Quiz
+
+                    </p>
+
+                    <a href="#newpanel">Start Quiz</a>
+                </div>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="mainpic">
+                <img src="img/guitarVbass.jpg" alt="Guitar" class="responsive" style="width: 100%;">
+                <div class="container">
+                    <h1 class="qhead">Bass or Guitar Quiz.</h1>
+                    <p class="questionquiz">
+                        This quiz will ask five questions which will determine whether your first instrument should be a guitar or bass.<br />
+
+
+                    </p>
+
+                    <a href="#newpanel">Start Quiz</a>
+                </div>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="mainpic">
+                <img src="img/basses.jpg" alt="bass guitar" class="responsive" style="width: 100%;">
+                <div class="container">
+                    <h1 class="qhead">Type of Bass to Buy Quiz.</h1>
+                    <p class="questionquiz">
+                        This quiz will ask ten questions and then recommend a bass guitar to buy.<br />
+                        The bass guitars recommended are:<br />
+                        - MusicMan StingRay <br />
+                        - Fender Precision <br />
+                        - Fender Jazz <br />
+                        - Rickenbacker
+
+
+                    </p>
+
+                    <a href="#newpanel">Start Quiz</a>
+                </div>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="mainpic">
+                <img src="img/musick.jpg" alt="bass guitar" class="responsive" style="width: 100%;">
+                <div class="container">
+                    <h1 class="qhead">Music Knowledge Quiz.</h1>
+                    <p class="questionquiz">
+                        This is a general knowledge music quiz that contains tens questions and will score your answer at the end.
+
+
+                    </p>
+
+                    <a href="#newpanel">Start Quiz</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div data-role="footer" data-theme="b" data-position="fixed" style="position:fixed;bottom:0;">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#guide" data-icon="bars">Quiz</a></li>
+                    <li><a href="#bass" data-icon="bars">Basses</a></li>
+                    <li><a href="#musician" data-icon="bars">Musicians</a></li>
+                    <li><a href="#contact" data-icon="bars">Feedback</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--*********************************************************** QUIZ Buyers Guide  question 1 **************************************** -->
+
+
+    <div data-role="page" id="quizStart">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <form id="buyerGuide" name="buyerGuide">
+
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 1 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Which bass player's sound do you prefer?</h2>
+                        <hr />
+                        <label for='BG1mc1'>Flea</label>
+                        <input type="radio" id="BG1mc1" name="BGquestion1" value="1">
+                        <label for="BG1mc2">James Jamerson</label>
+                        <input type="radio" id="BG1mc2" name="BGquestion1" value="2">
+                        <label for='BG1mc3'>Joe Dart</label>
+                        <input type="radio" id="BG1mc3" name="BGquestion1" value="3">
+                        <label for="BG1mc4">Lemmy</label>
+                        <input type="radio" id="BG1mc4" name="BGquestion1" value="4">
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="BGanswerRequired1();">Next Question</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+    <!-- ********************************************Buyers guide Question 2 ********************************-->
+
+    <div data-role="page" id="quizStart2">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <form id="buyerGuide2" name="buyerGuide2">
+
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 2 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Which bands bass sound do you prefer?</h2>
+                        <hr />
+                        <label for='BG2mc1'>Blink 182</label>
+                        <input type="radio" id="BG2mc1" name="BGquestion2" value="1">
+                        <label for="BG2mc2">Foo Fighters</label>
+                        <input type="radio" id="BG2mc2" name="BGquestion2" value="2">
+                        <label for='BG2mc3'>Sly and the Family Stone</label>
+                        <input type="radio" id="BG2mc3" name="BGquestion2" value="3">
+                        <label for="BG2mc4">Rush</label>
+                        <input type="radio" id="BG2mc4" name="BGquestion2" value="4">
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="BGanswerRequired2();">Next Question</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- ********************************************Buyers guide Question 3 ********************************-->
+
+    <div data-role="page" id="quizStart3">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <form id="buyerGuide3" name="buyerGuide3">
+
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 3 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">What sort of style do you prefer?</h2>
+                        <hr />
+                        <label for='BG3mc1'>Slap</label>
+                        <input type="radio" id="BG3mc1" name="BGquestion3" value="1">
+                        <label for="BG3mc2">Pop</label>
+                        <input type="radio" id="BG3mc2" name="BGquestion3" value="2">
+                        <label for='BG3mc3'>Funk</label>
+                        <input type="radio" id="BG3mc3" name="BGquestion3" value="3">
+                        <label for="BG3mc4">Metal</label>
+                        <input type="radio" id="BG3mc4" name="BGquestion3" value="4">
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="BGanswerRequired3();">Next Question</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- ********************************************Buyers guide Question 4 ********************************-->
+
+    <div data-role="page" id="quizStart4">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <form id="buyerGuide4" name="buyerGuide4">
+
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 4 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Which bands bass sound do you prefer?</h2>
+                        <hr />
+                        <label for='BG4mc1'>Red Hot Chili Peppers</label>
+                        <input type="radio" id="BG4mc1" name="BGquestion4" value="1">
+                        <label for="BG4mc2">The Police</label>
+                        <input type="radio" id="BG4mc2" name="BGquestion4" value="2">
+                        <label for='BG4mc3'>Rage Against The Machine</label>
+                        <input type="radio" id="BG4mc3" name="BGquestion4" value="3">
+                        <label for="BG4mc4">Metallica</label>
+                        <input type="radio" id="BG4mc4" name="BGquestion4" value="4">
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="BGanswerRequired4();">Next Question</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- ********************************************Buyers guide Question 5 **********************************************************-->
+
+    <div data-role="page" id="quizStart5">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <form id="buyerGuide5" name="buyerGuide5">
+
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 5 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Which bass sound do you prefer on these songs?</h2>
+                        <hr />
+                        <label for='BG5mc1'>Another One Bites The Dust</label>
+                        <input type="radio" id="BG5mc1" name="BGquestion5" value="1">
+                        <label for="BG5mc2">I Heard it Through The Grapevine</label>
+                        <input type="radio" id="BG5mc2" name="BGquestion5" value="2">
+                        <label for='BG5mc3'>Killing In The Name Of</label>
+                        <input type="radio" id="BG5mc3" name="BGquestion5" value="3">
+                        <label for="BG5mc4">Ace Of Spades</label>
+                        <input type="radio" id="BG5mc4" name="BGquestion5" value="4">
+
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="BGanswerRequired5();">Next Question</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- ********************************************Buyers guide Question 6 ********************************-->
+
+    <div data-role="page" id="quizStart6">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <form id="buyerGuide6" name="buyerGuide6">
+
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 6 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Which is your favourite bass tone?</h2>
+                        <hr />
+                        <label for='BG6mc1'>Aggressive/Prominent midrange</label>
+                        <input type="radio" id="BG6mc1" name="BGquestion6" value="1">
+                        <label for="BG6mc2">Punchy with deep sound</label>
+                        <input type="radio" id="BG6mc2" name="BGquestion6" value="2">
+                        <label for='BG6mc3'>Bright/Rich midrange</label>
+                        <input type="radio" id="BG6mc3" name="BGquestion6" value="3">
+                        <label for="BG6mc4">Punchy with aggressive treble</label>
+                        <input type="radio" id="BG6mc4" name="BGquestion6" value="4">
+
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="BGanswerRequired6();">Next Question</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- ********************************************Buyers guide Question 7 ********************************-->
+
+    <div data-role="page" id="quizStart7">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <form id="buyerGuide7" name="buyerGuide7">
+
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 7 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Which describes your playing best?</h2>
+                        <hr />
+                        <label for='BG7mc1'>Slap</label>
+                        <input type="radio" id="BG7mc1" name="BGquestion7" value="1">
+                        <label for="BG7mc2">Driving the song</label>
+                        <input type="radio" id="BG7mc2" name="BGquestion7" value="2">
+                        <label for='BG7mc3'>Mixture of main drive and solos</label>
+                        <input type="radio" id="BG7mc3" name="BGquestion7" value="3">
+                        <label for="BG7mc4">Root notes</label>
+                        <input type="radio" id="BG7mc4" name="BGquestion7" value="4">
+
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="BGanswerRequired7();">Next Question</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- ********************************************Buyers guide Question 8 ********************************-->
+
+    <div data-role="page" id="quizStart8">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <form id="buyerGuide8" name="buyerGuide8">
+
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 8 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Which recordings do you prefer the bass sound in?</h2>
+                        <hr />
+                        <label for='BG8mc1'>Louis Johnson</label>
+                        <input type="radio" id="BG8mc1" name="BGquestion8" value="1">
+                        <label for="BG8mc2">Pino Paladino</label>
+                        <input type="radio" id="BG8mc2" name="BGquestion8" value="2">
+                        <label for='BG8mc3'>Larry Graham</label>
+                        <input type="radio" id="BG8mc3" name="BGquestion8" value="3">
+                        <label for="BG8mc4">Paul McCarthy</label>
+                        <input type="radio" id="BG8mc4" name="BGquestion8" value="4">
+
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="BGanswerRequired8();">Next Question</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- ********************************************Buyers guide Question 9 ********************************-->
+
+    <div data-role="page" id="quizStart9">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <form id="buyerGuide9" name="buyerGuide9">
+
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 9 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Which bands bass sound do you prefer?</h2>
+                        <hr />
+                        <label for='BG9mc1'>Jamiroquai</label>
+                        <input type="radio" id="BG9mc1" name="BGquestion9" value="1">
+                        <label for="BG9mc2">Queen</label>
+                        <input type="radio" id="BG9mc2" name="BGquestion9" value="2">
+                        <label for='BG9mc3'>Vulfpeck</label>
+                        <input type="radio" id="BG9mc3" name="BGquestion9" value="3">
+                        <label for="BG9mc4">Motorhead</label>
+                        <input type="radio" id="BG9mc4" name="BGquestion9" value="4">
+
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="BGanswerRequired9();">Next Question</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- ********************************************Buyers guide Question 10 ********************************-->
+
+    <div data-role="page" id="quizStart10">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <form id="buyerGuide10" name="buyerGuide10">
+
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 10 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Which bass sound do you prefer on these songs?</h2>
+                        <hr />
+                        <label for='BG10mc1'>Beat It</label>
+                        <input type="radio" id="BG10mc1" name="BGquestion10" value="1">
+                        <label for="BG10mc2">Black Magic Woman</label>
+                        <input type="radio" id="BG10mc2" name="BGquestion10" value="2">
+                        <label for='BG10mc3'>Whole Lotta Love</label>
+                        <input type="radio" id="BG10mc3" name="BGquestion10" value="3">
+                        <label for="BG10mc4">From Whom The Bell Tolls</label>
+                        <input type="radio" id="BG10mc4" name="BGquestion10" value="4">
+
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="BGanswerRequired10();">Finish</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div data-role="page" id="BGQuizAnswer">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+            <a href="#guide" data-role="button" data-inline="true" data-icon="back" data-ajax="false">Menu</a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="mainpic">
+                <div class="container">
+                    <h1>Quiz Completed</h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <div id="BGafterSubmit">
+                    <p id="BGmessage"></p>
+                    <img id="BGpictures" />
+
+                </div>
+
+            </div>
+        </div>
+
+        <div data-role="footer" data-theme="b" data-position="fixed" style="position:fixed;bottom:0;">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#guide" data-icon="bars">Quiz</a></li>
+                    <li><a href="#bass" data-icon="bars">Basses</a></li>
+                    <li><a href="#musician" data-icon="bars">Musicians</a></li>
+                    <li><a href="#contact" data-icon="bars">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ****************************************** QUIZ  Bass Or Guitar ***************************************************** -->
+
+
+    <div data-role="page" id="BeginnerBOG">
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+            <a href="#guide" data-role="button" data-inline="true" data-icon="back" data-ajax="false">Menu</a>
+        </div>
+        <div data-role="main" class="ui-content">
+
+
+            <form id="bassOrGuitarQuiz" name="bassOrGuitarQuiz">
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 1 of 5</h3>
+                        <hr />
+                        <h2 class="questionquiz">How much are you looking to spend on your instrument?</h2>
+                        <hr />
+                        <label for='BOG1mc1'>Less than €500</label>
+                        <input type="radio" id="BOG1mc1" name="BOGquestion1" value="1">
+
+                        <label for="BOG1mc2">More than €500</label>
+                        <input type="radio" id="BOG1mc2" name="BOGquestion1" value="2">
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="answerRequired1();">Next Question</a>
+                    </div>
+                </div>
+
+
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+
+    <!--********************************Question 2 BOG **********************************-->
+
+    <div data-role="page" id="BeginnerBOG2">
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+            <a href="#guide" data-role="button" data-inline="true" data-icon="back" data-ajax="false">Back</a>
+        </div>
+        <div data-role="main" class="ui-content">
+
+
+            <form id="bassOrGuitarQuiz2" name="bassOrGuitarQuiz2">
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 2 of 5</h3>
+                        <hr />
+                        <h2 class="questionquiz">What are more interested in doing when you listen to a song?</h2>
+                        <hr />
+                        <label for='BOG2mc1'>Stand out in the song</label>
+                        <input type="radio" id="BOG2mc1" name="BOGquestion2" value="1">
+                        <label for="BOG2mc2">Be part of the rhythm section</label>
+                        <input type="radio" id="BOG2mc2" name="BOGquestion2" value="2">
+
+                    </div>
+                </div>
+
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="answerRequired2();">Next Question</a>
+                    </div>
+                </div>
+
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+    <!--********************************************************--Question 3 BOG **************************************************-->
+
+    <div data-role="page" id="BeginnerBOG3">
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+            <a href="#guide" data-role="button" data-inline="true" data-icon="back" data-ajax="false">Back</a>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <form id="bassOrGuitarQuiz3" name="bassOrGuitarQuiz3">
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 3 of 5</h3>
+                        <hr />
+                        <h2 class="questionquiz">What sort of style do you prefer?</h2>
+                        <hr />
+                        <label for="BOG3mc1">Rock</label>
+                        <input type="radio" id="BOG3mc1" name="BOGquestion3" value="1">
+                        <label for="BOG3mc2">Funk</label>
+                        <input type="radio" id="BOG3mc2" name="BOGquestion3" value="2">
+
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="answerRequired3();">Next Question</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+    <!--********************************************************--Question 4 BOG **************************************************-->
+
+    <div data-role="page" id="BeginnerBOG4">
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+            <a href="#guide" data-role="button" data-inline="true" data-icon="back" data-ajax="false">Back</a>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <form id="bassOrGuitarQuiz4" name="bassOrGuitarQuiz4">
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 4 of 5</h3>
+                        <hr />
+                        <h2 class="questionquiz">Which bands sound do you prefer?</h2>
+                        <hr />
+                        <label for="BOG4mc1">Bon Jovi</label>
+                        <input type="radio" id="BOG4mc1" name="BOGquestion4" value="1">
+                        <label for="BOG4mc2">Kings Of Leon</label>
+                        <input type="radio" id="BOG4mc2" name="BOGquestion4" value="2">
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="answerRequired4();">Next Question</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!--********************************************************--Question 5 BOG **************************************************-->
+
+    <div data-role="page" id="BeginnerBOG5">
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+            <a href="#guide" data-role="button" data-inline="true" data-icon="back" data-ajax="false">Back</a>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <form id="bassOrGuitarQuiz5" name="bassOrGuitarQuiz5">
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 5 of 5</h3>
+                        <hr />
+                        <h2 class="questionquiz">What size are your hands?</h2>
+                        <hr />
+                        <label for="BOG5mc1">Small - Medium</label>
+                        <input type="radio" id="BOG5mc1" name="BOGquestion5" value="1">
+                        <label for="BOG5mc2">Medium - Large</label>
+                        <input type="radio" id="BOG5mc2" name="BOGquestion5" value="2">
+
+                    </div>
+                </div>
+
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="answerRequired5();">Finish</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+    <div data-role="page" id="BOGQuizAnswer">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+            <a href="#guide" data-role="button" data-inline="true" data-icon="back" data-ajax="false">Back</a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="mainpic">
+                <div class="container">
+                    <h1>Quiz Completed</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div id="BOGafterSubmit">
+                    <p id="BOGmessage"></p>
+                    <img id="BOGpictures" />
+
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-theme="b" data-position="fixed" style="position:fixed;bottom:0;">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#guide" data-icon="bars">Quiz</a></li>
+                    <li><a href="#bass" data-icon="bars">Basses</a></li>
+                    <li><a href="#musician" data-icon="bars">Musicians</a></li>
+                    <li><a href="#contact" data-icon="bars">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--*********************************************************************** Music QUIZ ************************************* -->
+
+    <div data-role="page" id="musicQuiz">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+            <a href="#guide" data-role="button" data-inline="true" data-icon="back" data-ajax="false">Back</a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="mainpic">
+                <div class="container">
+                    <h1>Music Quiz</h1>
+                </div>
+            </div>
+
+            <form id="quizMusic" name="quizMusic">
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 1 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Who was the primary writer in the Beatles song 'Come Together'?</h2>
+                        <hr />
+                        <label for="1mc1">Paul McCarthy</label>
+                        <input type="radio" id="1mc1" name="question1" value="1">
+                        <label for="1mc2">Ringo</label>
+                        <input type="radio" id="1mc2" name="question1" value="2">
+                        <label for="1mc3">John Lennon</label>
+                        <input type="radio" id="1mc3" name="question1" value="3">
+                        <label for="1mc4">George Harrison</label>
+                        <input type="radio" id="1mc4" name="question1" value="4">
+
+                    </div>
+                </div>
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 2 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Which album has the record as most weeks spent at number one in the billboard charts?</h2>
+                        <hr />
+                        <label for="2mc1">Thriller</label>
+                        <input type="radio" id="2mc1" name="question2" value="1">
+                        <label for="2mc2">Rumours</label>
+                        <input type="radio" id="2mc2" name="question2" value="2">
+                        <label for="2mc3">West Side Story</label>
+                        <input type="radio" id="2mc3" name="question2" value="3">
+                        <label for="2mc4">Purple Rain</label>
+                        <input type="radio" id="2mc4" name="question2" value="4">
+                    </div>
+                </div>
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 3 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Which album has spent the most weeks on the charts?</h2>
+                        <hr />
+                        <label for="3mc1">The Dark Side of the Moon - Pink Floyd</label>
+                        <input type="radio" id="3mc1" name="question3" value="1">
+                        <label for="3mc2">Metallica - Metallica</label>
+                        <input type="radio" id="3mc2" name="question3" value="2">
+                        <label for="3mc3">Journey's Greatest Hits - Journey</label>
+                        <input type="radio" id="3mc3" name="question3" value="3">
+                        <label for="3mc4">Curtain Call: The Hits - Eminem</label>
+                        <input type="radio" id="3mc4" name="question3" value="4">
+                    </div>
+                </div>
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 4 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Who played bass on Marvin Gaye's hit 'What's Going On'?</h2>
+                        <hr />
+                        <label for="4mc1">John Entwistle</label>
+                        <input type="radio" id="4mc1" name="question4" value="1">
+                        <label for="4mc2">George Porter Jr.</label>
+                        <input type="radio" id="4mc2" name="question4" value="2">
+                        <label for="4mc3">James Jamerson</label>
+                        <input type="radio" id="4mc3" name="question4" value="3">
+                        <label for="4mc4">Larry Graham</label>
+                        <input type="radio" id="4mc4" name="question4" value="4">
+                    </div>
+                </div>
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 5 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Who was The Who's first drummer?</h2>
+                        <hr />
+                        <label for="5mc1">Keith Moon</label>
+                        <input type="radio" id="5mc1" name="question5" value="1">
+                        <label for="5mc2">Doug Sandom</label>
+                        <input type="radio" id="5mc2" name="question5" value="2">
+                        <label for="5mc3">John Bonham</label>
+                        <input type="radio" id="5mc3" name="question5" value="3">
+                        <label for="5mc4">Charlie Watts</label>
+                        <input type="radio" id="5mc4" name="question5" value="4">
+                    </div>
+                </div>
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 6 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Who hasn't got a number one album in the America charts?</h2>
+                        <hr />
+                        <label for="6mc1">U2</label>
+                        <input type="radio" id="6mc1" name="question6" value="1">
+                        <label for="6mc2">Sinead O'Connor</label>
+                        <input type="radio" id="6mc2" name="question6" value="2">
+                        <label for="6mc3">Niall Horan</label>
+                        <input type="radio" id="6mc3" name="question6" value="3">
+                        <label for="6mc4">Thin Lizzy</label>
+                        <input type="radio" id="6mc4" name="question6" value="4">
+                    </div>
+                </div>
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 7 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Which song was the quickest to reach a billion views on Youtube after its release?</h2>
+                        <hr />
+                        <label for="7mc1">Shape of You - Ed Sheeran</label>
+                        <input type="radio" id="7mc1" name="question7" value="1">
+                        <label for="7mc2">Sorry - Justin Bieber</label>
+                        <input type="radio" id="7mc2" name="question7" value="2">
+                        <label for="7mc3">Girls Like You - Maroon 5</label>
+                        <input type="radio" id="7mc3" name="question7" value="3">
+                        <label for="7mc4">Hello - Adele</label>
+                        <input type="radio" id="7mc4" name="question7" value="4">
+                    </div>
+                </div>
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 8 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Who was the first mainstream slap bass player?</h2>
+                        <hr />
+                        <label for="8mc1">Larry Graham</label>
+                        <input type="radio" id="8mc1" name="question8" value="1">
+                        <label for="8mc2">Victor Wooten</label>
+                        <input type="radio" id="8mc2" name="question8" value="2">
+                        <label for="8mc3">James Jamerson</label>
+                        <input type="radio" id="8mc3" name="question8" value="3">
+                        <label for="8mc4">Marcus Miller</label>
+                        <input type="radio" id="8mc4" name="question8" value="4">
+                    </div>
+                </div>
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 9 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Who wrote the lyrics to the song 'Tiny Dancer'?</h2>
+                        <hr />
+                        <label for="9mc1">Elton John</label>
+                        <input type="radio" id="9mc1" name="question9" value="1">
+                        <label for="9mc2">Bernie Taupin</label>
+                        <input type="radio" id="9mc2" name="question9" value="2">
+                        <label for="9mc3">Neil Young</label>
+                        <input type="radio" id="9mc3" name="question9" value="3">
+                        <label for="9mc4">Paul McCarthy</label>
+                        <input type="radio" id="9mc4" name="question9" value="4">
+                    </div>
+                </div>
+                <div class="mainpic">
+                    <div class="container">
+                        <h3 class="qhead">Question 10 of 10</h3>
+                        <hr />
+                        <h2 class="questionquiz">Who was the composer of the Queen song 'I Want to Break Free'?</h2>
+                        <hr />
+                        <label for="10mc1">Queen</label>
+                        <input type="radio" id="10mc1" name="question10" value="1">
+                        <label for="10mc2">Freddie Mercury</label>
+                        <input type="radio" id="10mc2" name="question10" value="2">
+                        <label for="10mc3">John Deacon</label>
+                        <input type="radio" id="10mc3" name="question10" value="3">
+                        <label for="10mc4">Brian May</label>
+                        <input type="radio" id="10mc4" name="question10" value="4">
+                    </div>
+                </div>
+                <div class="mainpic">
+                    <div class="container">
+                        <a data-role="button" id="buttonQuiz" onclick="musicKanswers();">Finish</a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        <div data-role="footer" data-theme="b" data-position="fixed" style="position:fixed;bottom:0;">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#guide" data-icon="bars">Quiz</a></li>
+                    <li><a href="#bass" data-icon="bars">Basses</a></li>
+                    <li><a href="#musician" data-icon="bars">Musicians</a></li>
+                    <li><a href="#contact" data-icon="bars">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="QuizAnswer">
+
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+            <a href="#guide" data-role="button" data-inline="true" data-icon="back" data-ajax="false">Back</a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="mainpic">
+                <div class="container">
+                    <h1>Quiz Completed</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div id="afterSubmit">
+                    <p id="message"></p>
+                    <p id="numberCorrect"></p>
+
+                    <img id="picture" />
+
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-theme="b" data-position="fixed" style="position:fixed;bottom:0;">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#guide" data-icon="bars">Quiz</a></li>
+                    <li><a href="#bass" data-icon="bars">Basses</a></li>
+                    <li><a href="#musician" data-icon="bars">Musicians</a></li>
+                    <li><a href="#contact" data-icon="bars">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***************************************Basses******************************************************************-->
+    <div data-role="page" id="bass">
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#fenderJazz">
+                        <img src="img/fenderJazz2.jpg">
+                        <h1>Fender Jazz</h1>
+                    </a>
+                </li>
+            </ul>
+
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#stingRay">
+                        <img src="img/StingRay.jpg">
+                        <h1>Music Man StingRay</h1>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-theme="b" data-position="fixed" style="position:fixed;bottom:0;">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#guide" data-icon="bars">Quiz</a></li>
+                    <li><a href="#bass" data-icon="bars">Basses</a></li>
+                    <li><a href="#musician" data-icon="bars">Musicians</a></li>
+                    <li><a href="#contact" data-icon="bars">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ******************************************/musician*******************************************************8 -->
+    <div data-role="page" id="musician">
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#joeDart">
+                        <img src="img/joeDart.jpg">
+                        <h1>Joe Dart</h1>
+                    </a>
+                </li>
+            </ul>
+
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#flea">
+                        <img src="img/flea.jpg">
+                        <h1>Flea</h1>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-theme="b" data-position="fixed" style="position:fixed;bottom:0;">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#guide" data-icon="bars">Quiz</a></li>
+                    <li><a href="#bass" data-icon="bars">Basses</a></li>
+                    <li><a href="#musician" data-icon="bars">Musicians</a></li>
+                    <li><a href="#contact" data-icon="bars">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ******************************************************************* page for basses ********************************************** -->
+
+    <div data-role="page" id="fenderJazz">
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Fender Jazz</h1>
+            <a data-role="button" onclick="ReloadBass();" data-inline="true" data-icon="back">Back</a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="mainpic">
+                <div class="container">
+                    <h2>About</h2>
+                    <hr />
+                    <p class="qheadjust">The Jazz Bass (or J Bass) is the second model of electric bass created by Leo Fender. It is distinct from the Precision Bass in that its tone is brighter and richer in the midrange and treble with less emphasis on the fundamental frequency. It has a more focused tone than the Precision Bass, with less low end and low midrange. The sound of the Jazz Bass has been fundamental in the development of signature sounds in certain musical genres, such as funk, disco, reggae, blues, progressive rock, heavy metal and jazz fusion. The body shape is also different from the Precision Bass, in that the Precision Bass has a symmetrical lower bout on the body, designed after the Telecaster and Stratocaster lines of guitars, while the Jazz Bass has an offset lower bout, mimicking the design aesthetic of the Jaguar and Jazzmaster guitars.</p>
+                </div>
+                <hr />
+                <div class="container">
+                    <h2>Videos</h2>
+                    <hr />
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/n3BzRlcgXag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <hr />
+                <div class="container">
+                    <h2>Fender Jazz Players</h2>
+                    <hr />
+                    <h3>Jaco Pastorius</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/60cF4zP84J8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <hr />
+                    <h3>Joe Dart</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/WwbVFYWNyqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="stingRay">
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>MM StingRay</h1>
+            <a data-role="button" onclick="ReloadBass();" data-inline="true" data-icon="back">Back</a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="mainpic">
+                <div class="container">
+                    <h2>About</h2>
+                    <hr />
+                    <p class="qheadjust">First introduced in 1976, the StingRay has been revered as one of the most iconic bass guitars in history. The StingRay was the first production four string bass to feature on-board active equalization. The flagship of the Music Man line, today's StingRay is the same as it was some forty years ago featuring a solid roadworthy construction, massive hardened steel bridge, elegant oval pickguard, 3+1 tuning key configuration, and the ever popular Music Man humbucker. All of which combined produce a look, feel and sound that are remarkably unmistakable.</p>
+                </div>
+                <hr />
+                <div class="container">
+                    <h2>Videos</h2>
+                    <hr />
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/FVHC1-K2l2w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <hr />
+                <div class="container">
+                    <h2>Music Man StingRay Players</h2>
+                    <hr />
+                    <h3>Flea</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/cM46WAY6MIc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <hr />
+                    <h3>Louis Johnson</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/GLfZOGaHqpU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- *******************************************************************Page for musicians**************************************************************-->
+    <!-- Joe Dart -->
+
+    <div data-role="page" id="joeDart">
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Joe Dart</h1>
+            <a data-role="button" onclick="ReloadMusician();" data-inline="true" data-icon="back">Back</a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="mainpic">
+                <div class="container">
+                    <h2>About</h2>
+                    <hr />
+                    <p class="qheadjust">
+                        Since age eight, when his father aspired to create a good old-fashioned family band, Joe Dart has always had a bass in his hands. Although his sibling collaboration never took off, Dart fell in love with the instrument and grew up replicating the likes of Flea, Pino Palladino, Bernard Edwards, and the left hand of Stevie Wonder in various bands around Harbor Springs, Michigan. After thriving in his high school jazz ensemble, Dart had the opportunity to attend Berklee College of Music, which he turned down to stay closer to home and study music at Michigan University. That turned out to be the best decision of his life, as it led him to meet his best friends and Vulpeck bandmates Jack Stratton, Theo Katzman, and Woody Goss.
+                    </p><p class="qheadjust">
+                        The funky quartet assembled in an effort to pay homage to the great rhythm sections of the past and to create music with a groove-first focus for the masses. Thanks to their strong online presence and high-energy shows, they’ve accomplished all of that and more—so much so that when the band plays its song “Dean Town” live, it’s not unusual for the crowd to sing Dart’s difficult bass lines along with him note-for-note. And on the outfit’s latest album, The Beautiful Game, Dart solidifies himself as one of the most exciting young players to emerge, thanks to his tasteful chops, funky grooves, rapid finger work, and unbelievable pocket.
+                    </p>
+
+                </div>
+                <hr />
+
+                <div class="container">
+
+                    <h2>Videos</h2>
+                    <hr />
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/9eOF7t4HgjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <hr />
+                <div class="container">
+                    <h2>Who has Joe Dart worked with?</h2>
+                    <hr />
+                    <h3>Vulfpeck</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/to22meUpSEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <hr />
+                    <h3>Theo Katzman</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Bv9LC3JFgFk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Flea-->
+    <div data-role="page" id="flea">
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Flea</h1>
+            <a data-role="button" onclick="ReloadMusician();" data-inline="true" data-icon="back">Back</a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="mainpic">
+                <div class="container">
+                    <h2>About</h2>
+                    <hr />
+                    <p class="qheadjust">
+                        Michael Peter Balzary (born 16 October 1962) known professionally as Flea, is an Australian-American musician and actor. He is best known as the bassist and only constant member of the rock band Red Hot Chili Peppers. Flea is widely considered among the best bassists of all time. Flea briefly appeared as the bassist for such bands as What Is This?, Fear, and Jane's Addiction. He has performed with rock supergroups Atoms for Peace, Antemasque, Pigface, and Rocket Juice & the Moon, and collaborated with The Mars Volta, Johnny Cash, Tom Waits, Alanis Morissette, and Young MC. Flea also performed live with Nirvana in 1993 playing the trumpet.
+
+                        Flea incorporates elements of funk (including slap bass), psychedelic, punk, and hard rock. In 2009, Rolling Stone readers ranked Flea the second best bassist of all time, behind only John Entwistle. In 2012, he and the other members of Red Hot Chili Peppers were inducted into the Rock and Roll Hall of Fame.
+                    </p>
+                </div>
+                <hr />
+                <div class="container">
+                    <h2>Videos</h2>
+                    <hr />
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/D32PhQr3RIQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <hr />
+                <div class="container">
+                    <h2>Who has Flea worked with?</h2>
+                    <hr />
+                    <h3>Red Hot Chili Peppers</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/nKp0uwiD6uc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ********************************************************************** /contact ***************************************************************** -->
+
+    <div data-role="page" id="contact">
+        <div data-role="header" data-theme="b" data-position="fixed" style="position:fixed;top:0;">
+            <h1>Bass Guitar Quiz</h1>
+            <a data-role="button" onclick="reloadContact();" data-inline="true" data-icon="back">Quiz</a>
+        </div>
+
+        <div role="main" class="ui-content">
+
+            <form id="my_form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+                <label><input id="nameField" placeholder="Name" name="entry.2097451255" type="text" required /></label>
+                <label><input id="emailField" placeholder="Email Address" type="email" name="entry.1504576955" required></label>
+                <textarea id="textField" placeholder="Write your feedback here" rows="10" type="text" name="entry.1845205565" required></textarea>
+                <label><input id="mybtn" type="submit" value="Submit Feedback"></label>
+
+
+
+
+            </form>
+
+            <div class="mainpic">
+                <h3 id="success-msg" style="display:none"> Your Message Has Been Sent Successfully</h3>
+
+            </div>
+
+
+        </div>
+        <div data-role="footer" data-theme="b" data-position="fixed" style="position:fixed;bottom:0;">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#guide" data-icon="bars">Quiz</a></li>
+                    <li><a href="#bass" data-icon="bars">Basses</a></li>
+                    <li><a href="#musician" data-icon="bars">Musicians</a></li>
+                    <li><a href="#contact" data-icon="bars">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
