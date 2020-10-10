@@ -120,10 +120,23 @@
 			<td>Web Application made responsive</td>
 			<td><a href="">Responsive Website</a> </td>
 		</tr>
-
   </tbody>
 </table>
 </div>
 </div>
+
+
+<?php
+function solution($N) {
+    // write your code in PHP7.0
+    if($N > 0)
+    {
+    $bin = decbin($N);
+    return $bin;
+    }
+
+}
+echo solution(54);
+?>
   </body>
 </html>
