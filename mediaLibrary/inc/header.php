@@ -2,13 +2,14 @@
 <head>
 	<title> <?php echo $pageTitle; ?></title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
 
 	<div class="header">
 
         <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-          <a class="navbar-brand" href="../index.html">Back to Project Menu</a>
+          <a class="navbar-brand" href="../index.php">Back to Project Menu</a>
         </nav>
 
 

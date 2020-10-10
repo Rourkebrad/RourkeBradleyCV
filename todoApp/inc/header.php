@@ -15,7 +15,7 @@
 
 	<header>
 			<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-			  <a class="navbar-brand" href="../index.html">Back to Project Menu</a>
+			  <a class="navbar-brand" href="../index.php">Back to Project Menu</a>
 				<!--<img src="inc/img/banner.jpg" height = "91" width="160" class="img-fluid" alt="Responsive image"></a> -->
 			 <ul class="nav nav-pills">
 				 <?php if(isset($_SESSION['userlogin']) && $_SESSION['userlogin'] !== 'admin'): ?>
@@ -44,13 +44,13 @@
 
 				<?php  endif ?>
 				<?php
-				if(isset($_SESSION['userlogin']) && $_SESSION['userlogin'] == "admin"):
+				//if(isset($_SESSION['userlogin']) && $_SESSION['userlogin'] == "admin"):
 				 ?>
 
 				<li class="nav-item">
 					<a class="nav-link" href="register.php">Signup</a>
 				</li>
-			<?php endif  ?>
+			<?php //endif  ?>
 			</nav>
   </header>
 

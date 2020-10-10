@@ -27,7 +27,7 @@ if(isset($_POST['signupBtn']))
 $pageTitle = "Register - Duties 123ink.ie";
 
 
-if(isset($_SESSION['userlogin']) && $_SESSION['userlogin'] == "admin"):
+//if(isset($_SESSION['userlogin']) && $_SESSION['userlogin'] == "admin"):
  ?>
 
 <h3>Add a user</h3>
@@ -45,7 +45,7 @@ if(isset($_SESSION['userlogin']) && $_SESSION['userlogin'] == "admin"):
 
 <p><a href="index.php">Back</a></p>
 
-<?php endif ?>
+
 
 
 <?php include("inc/footer.php"); ?>

@@ -4,8 +4,8 @@
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
 
@@ -45,7 +45,7 @@
 
 	<header class="header">
 		<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-			<a class="navbar-brand" href="../index.html">Back to Project Menu</a>
+			<a class="navbar-brand" href="../index.php">Back to Project Menu</a>
 		</nav
     <div class="col-container">
   		<h1>

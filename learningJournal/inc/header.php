@@ -9,15 +9,15 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/normalise.css">
     <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     </style>
 </head>
 <body>
     <header>
-    
-          <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-            <a class="navbar-brand" href="../index.html">Back to Project Menu</a>
-          </nav>
 
+          <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="../index.php">Back to Project Menu</a>
+          </nav>
         <div class="container">
             <div class="site-header">
                 <a class="logo" href="index.php"><i class="material-icons">library_books</i></a>

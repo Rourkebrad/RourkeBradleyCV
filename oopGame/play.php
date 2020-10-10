@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-      <a class="navbar-brand" href="../index.html">Back to Project Menu</a>
+      <a class="navbar-brand" href="../index.php">Back to Project Menu</a>
     </nav>
 </header>
 <?php
