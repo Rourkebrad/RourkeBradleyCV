@@ -8,6 +8,7 @@ $secondIncorrectRange = rand(1,10); // Get incorrect answers within 10 numbers e
 $firstIncorrect = $correct + $firstIncorrectRange; // Get incorrect answers within 10 numbers either way of correct answer
 $secondIncorrect = $correct - $secondIncorrectRange; // Get incorrect answers within 10 numbers either way of correct answer
 
+
 $totalQuestions = 10; //total number of questions
 
 //Shuffle answers
@@ -39,7 +40,7 @@ if(isset($_POST['reset']))
  {
 
    $correctStatement = "Correct Answer";
-    $_SESSION['totalCorrect']++;
+   $_SESSION['totalCorrect']++;
 
  }
  else {

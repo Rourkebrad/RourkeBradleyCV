@@ -1,5 +1,8 @@
 <?php
+
 include('inc/generate_questions.php');
+
+
 ?>
 
 <!DOCTYPE html>
@@ -21,16 +24,16 @@ include('inc/generate_questions.php');
   </header>
     <div class="container">
         <div id="quiz-box">
-            <p class="breadcrumbs"><?php echo "Question " . $_SESSION['clicks'];?> of <?php echo $totalQuestions;?></p>
+            <p class="breadcrumbs"><?php if(isset($_SESSION['clicks'])){ echo "Question " . $_SESSION['clicks'];} else { echo "Question " . $_SESSION['clicks'] = 1; $_SESSION['totalCorrect'] = 0;}?> of <?php echo $totalQuestions;?></p>
             <p class="quiz">What is <?php echo $leftAdder;?> + <?php echo $rightAdder;?>?</p>
-
+            <br>
             <p class="breadcrumbs">Select answer below:</p>
             <form action="<?php formPage(); ?>" method="post">
 
                 <input type="hidden" name="correctAnswer" value="<?php echo $correct;?>" />
-                <input type="submit" class="btn" name="answer"  value="<?php echo $shuffleAnswer[0];?>" />
-                <input type="submit" class="btn" name="answer" value="<?php echo $shuffleAnswer[1];?>" />
-                <input type="submit" class="btn" name="answer"  value="<?php echo $shuffleAnswer[2];?>" />
+                <input type="submit" class="btn btn-outline-success" name="answer"  value="<?php echo $shuffleAnswer[0];?>" />
+                <input type="submit" class="btn btn-outline-success" name="answer" value="<?php echo $shuffleAnswer[1];?>" />
+                <input type="submit" class="btn btn-outline-success" name="answer"  value="<?php echo $shuffleAnswer[2];?>" />
 
             </form>
         </div>

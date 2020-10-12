@@ -1,3 +1,10 @@
+<?php
+if(session_start())
+{
+	session_destroy();
+}
+ ?>
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -52,9 +59,9 @@ div {
     </tr>
     <tr>
       <th scope="row">4</th>
-      <td class="nav-link disabled">Quiz App (project coming soon)</td>
+      <td>Quiz App</td>
       <td>PHP - Procedural Programming</td>
-      <td class="nav-link disabled"><a href="phpQuizApp/index.php">Quiz App</a> </td>
+      <td><a href="phpQuizApp/index.php">Quiz App</a></td>
     </tr>
     <tr>
       <th scope="row">5</th>
