@@ -38,7 +38,6 @@
       </svg>
       <svg id="user_icon" viewBox="0 0 1792 1792" preserveAspectRatio="xMinYMin meet">
         <path d="M1536,1399q0,109-62.5,187t-150.5,78h-854q-88,0-150.5-78t-62.5-187q0-85,8.5-160.5t31.5-152,58.5-131,94-89,134.5-34.5q131,128,313,128t313-128q76,0,134.5,34.5t94,89,58.5,131,31.5,152,8.5,160.5zm-256-887q0,159-112.5,271.5t-271.5,112.5-271.5-112.5-112.5-271.5,112.5-271.5,271.5-112.5,271.5,112.5,112.5,271.5z" />
-
       </svg>
     </defs>
   </svg>
@@ -57,17 +56,17 @@
 
         <ul class="nav navbar-left">
 					<?php if (isAuthenticated()) : ?>
-        <li class="nav-item tasks<?php if ($page == "tasks") { echo " on"; } ?>"><a class="nav-link" href="task_list.php">View Tasks</a></li>
-        <li class="nav-item task<?php if ($page == "task") { echo " on"; } ?>"><a class="nav-link" href="task.php">Add Tasks</a></li>
+        <li class="nav-item tasks<?php if ($page == "tasks") { echo " on"; } ?>"><a class="nav-link" href="/phpUserAuthentication/task_list.php">View Tasks</a></li>
+        <li class="nav-item task<?php if ($page == "task") { echo " on"; } ?>"><a class="nav-link" href="/phpUserAuthentication/task.php">Add Tasks</a></li>
 			<?php endif;  ?>
       </ul>
         <ul class="nav">
 					<?php if (isAuthenticated()) : ?>
-            <li class="nav-item task<?php if ($page == "account") { echo " on"; } ?>"><a class="nav-link" href="/account.php">My Account</a></li>
-            <li class="nav-item tasks"><a class="nav-link" href="/procedures/doLogout.php">Logout</a></li>
+            <li class="nav-item task<?php if ($page == "account") { echo " on"; } ?>"><a class="nav-link" href="/phpUserAuthentication/account.php">My Account</a></li>
+            <li class="nav-item tasks"><a class="nav-link" href="/phpUserAuthentication/procedures/doLogout.php">Logout</a></li>
 					<?php else :    ?>
-            <li class="nav-item tasks<?php if ($page == "login") { echo " on"; } ?>"><a class="nav-link" href="/login.php">Login</a></li>
-            <li class="nav-item tasks<?php if ($page == "register") { echo " on"; } ?>"><a class="nav-link" href="/register.php">Register</a></li>
+            <li class="nav-item tasks<?php if ($page == "login") { echo " on"; } ?>"><a class="nav-link" href="/phpUserAuthentication/login.php">Login</a></li>
+            <li class="nav-item tasks<?php if ($page == "register") { echo " on"; } ?>"><a class="nav-link" href="/phpUserAuthentication/register.php">Register</a></li>
 					<?php endif;    ?>
         </ul>
     </div>

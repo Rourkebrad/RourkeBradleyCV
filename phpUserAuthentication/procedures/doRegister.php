@@ -8,7 +8,7 @@ $confirmPassword = request()->get('confirm_password');
 if ($password != $confirmPassword)
 {
   $session->getFlashBag()->add('error', 'Passwords Incorrect');
-  redirect('/register.php');
+  redirect('/phpUserAuthentication/register.php');
 }
 
 $user = findUserByUsername($username);
@@ -16,7 +16,7 @@ $user = findUserByUsername($username);
 if(!empty($user))
 {
   $session->getFlashBag()->add('error', 'Username not allowed');
-  redirect('/register.php');
+  redirect('/phpUserAuthentication/register.php');
 }
 
 $hashed = password_hash($password, PASSWORD_DEFAULT);

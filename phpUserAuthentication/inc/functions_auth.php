@@ -29,7 +29,7 @@ function requireAuth()
   {
     global $session;
     $session->getFlashBag()->add('error', 'You need to be logged in to proceed');
-    redirect('/login.php');
+    redirect('/phpUserAuthentication/login.php');
   }
 
 }

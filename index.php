@@ -83,9 +83,9 @@ div {
 		</tr>
 		<tr>
 			<th scope="row">8</th>
-			<td class="nav-link disabled">ToDo Application (project coming soon)</td>
+			<td>ToDo Application</td>
 			<td>PHP - CRUD - Databases - Authentication</td>
-			<td class="nav-link disabled"><a href="phpUserAuthentication/index.php">ToDo Application</a> </td>
+			<td><a href="phpUserAuthentication/index.php">ToDo Application</a> </td>
 		</tr>
 		<tr>
 			<th scope="row">9</th>
