@@ -95,9 +95,9 @@ div {
 		</tr>
 		<tr>
 			<th scope="row">10</th>
-			<td>Laravel Powered Site</td>
-			<td>PHP - Laravel</td>
-			<td><a href="laravelSite/petadoption/public/index.php">Pet Adoption</a></td>
+			<td class="nav-link disabled">Laravel Powered Site</td>
+			<td>PHP - Laravel (project coming soon)</td>
+			<td class="nav-link disabled"><a href="laravelSite/petadoption/public/index.php">Pet Adoption</a></td>
 		</tr>
 		<tr>
 			<th scope="row">11</th>
