@@ -9,7 +9,7 @@ $confirmPassword = request()->get('confirm_password');
 if ($newPassword != $confirmPassword)
 {
   $session->getFlashBag()->add('error', 'New Passwords do not match!!');
-  redirect('/account.php');
+  redirect('/phpUserAuthentication/account.php');
 }
 
 $user = getAuthenticatedUser();
@@ -17,13 +17,13 @@ $user = getAuthenticatedUser();
 if(empty($user))
 {
   $session->getFlashBag()->add('error', 'Error happened, please try again!');
-  redirect('/account.php');
+  redirect('/phpUserAuthentication/account.php');
 }
 
 if(!password_verify($currentPassword, $user['password']))
 {
   $session->getFlashBag()->add('error', 'Current password is incorrect, please try again!');
-  redirect('/account.php');
+  redirect('/phpUserAuthentication/account.php');
 }
 
 $hashed = password_hash($newPassword, PASSWORD_DEFAULT);
@@ -31,13 +31,11 @@ $hashed = password_hash($newPassword, PASSWORD_DEFAULT);
 if (!updatePassword($hashed, $user['id']))
 {
   $session->getFlashBag()->add('error', 'Could not update password');
-  redirect('/account.php');
+  redirect('/phpUserAuthentication/account.php');
 
 }
 
 $session->getFlashBag()->add('success', 'Password has been successfully changed');
-redirect('/account.php');
-
-
+redirect('/phpUserAuthentication/account.php');
 
 ?>

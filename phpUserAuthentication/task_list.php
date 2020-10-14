@@ -32,9 +32,9 @@ include 'inc/header.php';
 
             <div class="form-container">
                 <ul class="action_filter">
-                    <li<?php if ($filter=='incomplete') echo ' class="on"'; ?>><a href="task_list.php">Incomplete</a></li>
-                    <li<?php if ($filter=='complete') echo ' class="on"'; ?>><a href="task_list.php?filter=complete">Complete</a></li>
-                    <li<?php if ($filter=='all') echo ' class="on"'; ?>><a href="task_list.php?filter=all">All</a></li>
+                    <li<?php if ($filter=='incomplete') echo ' class="on"'; ?>><a href="/phpUserAuthentication/task_list.php">Incomplete</a></li>
+                    <li<?php if ($filter=='complete') echo ' class="on"'; ?>><a href="/phpUserAuthentication/task_list.php?filter=complete">Complete</a></li>
+                    <li<?php if ($filter=='all') echo ' class="on"'; ?>><a href="/phpUserAuthentication/task_list.php?filter=all">All</a></li>
                 </ul>
                   <table class="items">
                       <tr><th>Status</th><th>Title</th><th>Action</th></tr>

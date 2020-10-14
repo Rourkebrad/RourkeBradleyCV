@@ -24,6 +24,6 @@ $hashed = password_hash($password, PASSWORD_DEFAULT);
 $user = createUser($username, $hashed);
 saveUserSession($user);
 $session->getFlashBag()->add('success', 'User has been added');
-redirect('/');
+redirect('/phpUserAuthentication');
 
 ?>

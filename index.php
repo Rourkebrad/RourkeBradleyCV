@@ -71,7 +71,7 @@ div {
     </tr>
 		<tr>
 			<th scope="row">6</th>
-			<td>Media Library</td>
+			<td>Media Library (working progress)</td>
 			<td>PHP</td>
 			<td><a href="mediaLibrary/index.php">Media Library</a> </td>
 		</tr>
@@ -95,9 +95,9 @@ div {
 		</tr>
 		<tr>
 			<th scope="row">10</th>
-			<td class="nav-link disabled">Laravel Powered Site (project coming soon)</td>
+			<td>Laravel Powered Site</td>
 			<td>PHP - Laravel</td>
-			<td class="nav-link disabled"><a href="laravelSite/petadoption/public/index.php">Pet Adoption</a> </td>
+			<td><a href="laravelSite/petadoption/public/index.php">Pet Adoption</a></td>
 		</tr>
 		<tr>
 			<th scope="row">11</th>

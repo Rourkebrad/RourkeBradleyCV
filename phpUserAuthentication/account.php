@@ -1,10 +1,8 @@
 <?php
 require_once 'inc/bootstrap.php';
 requireAuth();
-
 $pageTitle = "My Account | Time Tracker";
 $page = 'account';
-
 include 'inc/header.php';
 ?>
 <div class="col-container page-container">
@@ -12,7 +10,7 @@ include 'inc/header.php';
         <h2 class="form-signin-heading">My Account</h2>
         <h4>Change Password</h4>
 
-        <form class="form-container" method="post" action="/procedures/changePassword.php">
+        <form class="form-container" method="post" action="/phpUserAuthentication/procedures/changePassword.php">
             <table class="items">
                 <tr>
                     <th><label for="inputCurrentPassword" class="sr-only">Current Password<span class="required">*</span></label></th>
