@@ -2,9 +2,9 @@
 class Model
 {
   private $server = "localhost";
-  private $username = "rourkebr_admin";
-  private $password = "Tar1123steach";
-  private $db = "rourkebr_shoppingList";
+  private $username = "XXXXXXXXXXX";
+  private $password = "XXXXXXXXX";
+  private $db = "XXXXXXXXXXX";
   private $conn;
 
   public function __construct()
