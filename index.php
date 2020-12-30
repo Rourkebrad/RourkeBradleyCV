@@ -16,15 +16,21 @@ if(session_start())
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<style>
-div {
-  background-image: url('img/bkimage.jpg');
+	
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('img/bkimage.jpg');
 }
+
+
 </style>
 	</head>
+
   <body>
     <div class="container-fluid">
 <p class="display-3 text-center pt-1">Rourke Bradley Coding Projects</p>
-<p class="lead">Examples of projects I have been working on using HTML, PHP, mySQL, JavaScript and Bootstrap. Source code available below on GitHub:</p>
+<p class="lead">Examples of projects I have been working on using HTML, PHP, mySQL, JavaScript and Bootstrap. Source code available below at GitHub:</p>
 <a href="https://github.com/Rourkebrad/RourkeBradleyCV.git" target="_blank">Github Source Code</a>
 
 <div class="pt-5">
@@ -39,54 +45,57 @@ div {
     </tr>
   </thead>
   <tbody>
+      	<tr >
+			<th scope="row">1</th>
+			<td>Shopping List</td>
+			<td>PHP / HTML / Bootstrap / mySQL</td>
+			<td><a href="shoppingList/index.php">Shopping List</a> </td>
+		</tr>
     <tr>
-      <th scope="row">1</th>
+      <th scope="row">2</th>
       <td>ToDo App</td>
-      <td>PHP - CRUD with database</td>
+      <td>PHP / HTML / Bootstrap / mySQL</td>
       <td><a href="todoApp/index.php">ToDo App</a> </td>
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <th scope="row">3</th>
       <td>OOP Game</td>
-      <td>PHP - Object Oriented Approach</td>
+      <td>PHP</td>
       <td><a href="oopGame/index.html">Phrase Hunter</a> </td>
     </tr>
     <tr>
-      <th scope="row">3</th>
+      <th scope="row">4</th>
       <td>Random Quote Generator</td>
-      <td>PHP - Procedural Programming</td>
+      <td>PHP</td>
       <td><a href="randomQuote/index.php">Random Quote Generator</a> </td>
     </tr>
     <tr>
-      <th scope="row">4</th>
+      <th scope="row">5</th>
       <td>Quiz App</td>
-      <td>PHP - Procedural Programming</td>
+      <td>PHP</td>
       <td><a href="phpQuizApp/index.php">Quiz App</a></td>
     </tr>
-    <tr>
-      <th scope="row">5</th>
+    <!--<tr>
+      <th scope="row">6</th>
       <td>Learning Journal</td>
       <td>PHP - Procedural Programming with database</td>
       <td><a href="learningJournal/index.php">Learning Journal</a> </td>
     </tr>
 		<tr>
-			<th scope="row">6</th>
+			<th scope="row">7</th>
 			<td>Media Library (working progress)</td>
 			<td>PHP</td>
 			<td><a href="mediaLibrary/index.php">Media Library</a> </td>
 		</tr>
-		<tr >
-			<th scope="row">7</th>
-			<td class="nav-link disabled">Shopping List (project available soon)</td>
-			<td>PHP - OOP</td>
-			<td class="nav-link disabled"><a href="">Shopping List</a> </td>
-		</tr>
+	
+			
 		<tr>
 			<th scope="row">8</th>
 			<td>ToDo Application</td>
 			<td>PHP - CRUD - Databases - Authentication</td>
 			<td><a href="phpUserAuthentication/index.php">ToDo Application</a> </td>
 		</tr>
+	
 		<tr>
 			<th scope="row">9</th>
 			<td class="nav-link disabled">ToDo API with Slim (project coming soon)</td>
@@ -95,8 +104,8 @@ div {
 		</tr>
 		<tr>
 			<th scope="row">10</th>
-			<td class="nav-link disabled">Laravel Powered Site</td>
-			<td>PHP - Laravel (project coming soon)</td>
+			<td class="nav-link disabled">Laravel Powered Site (project coming soon)</td>
+			<td>PHP - Laravel</td>
 			<td class="nav-link disabled"><a href="laravelSite/petadoption/public/index.php">Pet Adoption</a></td>
 		</tr>
 		<tr>
@@ -116,13 +125,13 @@ div {
 			<td class="nav-link disabled">Responsive Website (project coming soon)</td>
 			<td>PHP - HTML - Bootstrap</td>
 			<td class="nav-link disabled"><a href="">Responsive Website</a> </td>
-		</tr>
+		</tr> -->
   </tbody>
 </table>
 </div>
 
 <footer>
-	<div class="footer text-center">
+	<div class="footer text-center fixed-bottom">
 		© Rourke Bradley
 	</div>
 </footer>

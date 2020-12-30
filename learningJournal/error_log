@@ -1,0 +1,1 @@
+[30-Dec-2020 13:09:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rourkebr/rourkebradley.com/learningJournal/inc/header.php:1) in /home/rourkebr/rourkebradley.com/learningJournal/delete.php on line 11

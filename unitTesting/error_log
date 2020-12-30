@@ -1,0 +1,15 @@
+[17-Oct-2020 04:46:13 UTC] PHP Fatal error:  Uncaught Exception: Unable to create a listing, data unavailable in /home/rourkebr/rourkebradley.com/unitTesting/classes/ListingBasic.php:15
+Stack trace:
+#0 /home/rourkebr/rourkebradley.com/unitTesting/add.php(11): ListingBasic->__construct()
+#1 {main}
+  thrown in /home/rourkebr/rourkebradley.com/unitTesting/classes/ListingBasic.php on line 15
+[27-Nov-2020 23:18:30 UTC] PHP Fatal error:  Uncaught Exception: Unable to create a listing, data unavailable in /home/rourkebr/rourkebradley.com/unitTesting/classes/ListingBasic.php:15
+Stack trace:
+#0 /home/rourkebr/rourkebradley.com/unitTesting/add.php(11): ListingBasic->__construct()
+#1 {main}
+  thrown in /home/rourkebr/rourkebradley.com/unitTesting/classes/ListingBasic.php on line 15
+[27-Nov-2020 23:18:59 UTC] PHP Fatal error:  Uncaught Exception: Unable to create a listing, data unavailable in /home/rourkebr/rourkebradley.com/unitTesting/classes/ListingBasic.php:15
+Stack trace:
+#0 /home/rourkebr/rourkebradley.com/unitTesting/add.php(11): ListingBasic->__construct()
+#1 {main}
+  thrown in /home/rourkebr/rourkebradley.com/unitTesting/classes/ListingBasic.php on line 15

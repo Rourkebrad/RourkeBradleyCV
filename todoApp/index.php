@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Duties 123ink.ie";
+$pageTitle = "Duties";
 include 'inc/session.php';
 include 'inc/header.php';
 include 'inc/functions.php';
@@ -8,12 +8,14 @@ include 'inc/functions.php';
 <!-- only authorise to be viewed if session userlogin is set -->
 <?php if(!isset($_SESSION['userlogin']) || $_SESSION['userlogin'] == 'admin'):  ?>
 	<p>Please login to view this page.</p>
+	<p><u>Login</u></p>
+	<p>Username: test <br> Password: test</p>
 <?php else: ?>
 	<div class="container text-center">
 		&nbsp;
 		&nbsp;
 		&nbsp;
-		<h1>123ink.ie Duties</h1>
+		<h1>Duties</h1>
 		&nbsp;&nbsp;
 		<div class="row">
 			<div class="col">
